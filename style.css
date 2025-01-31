@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img_product {
+  width: 100%;
+  border: 1px solid #312e2e;
+}
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.category {
+  border: 2px solid #312e2e;
+  background-color: #312e2e;
+  text-decoration: none;
+  width: 300px;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  font-weight: 500;
+}
+.category:hover {
+  color: #312e2e;
+  border-bottom: 1px solid #312e2e;
+  transform: scale(1.1);
+  border: 3px solid red;
+  background-color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.logo-flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.logo {
+  width: 100%;
+}
+.logo-product {
+  width: 100%;
+  padding-inline: 2rem;
+}
+
+/*************** produktliste ************/
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-inline: 4rem;
+  grid-template-rows: repeat(4, auto);
+}
+.logo-flex2 {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.p {
+  text-decoration: none;
+  font-weight: 400;
+}
+.nike {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.pris {
+  padding-top: 1rem;
+}
+.overskrift_produktliste {
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  padding-inline: 4rem;
+  padding-bottom: 3rem;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.product-list_side {
+  text-decoration: none;
+  color: #312e2e;
+}
+.rød_tekst {
+  color: red;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.overstreg_pris {
+  text-decoration: line-through;
+  padding-top: 1rem;
+  color: grey;
+}
+
+.udsalgs_boks {
+  position: absolute;
+  border: red;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  top: 10px;
+  right: 10px;
+}
+.soldout_boks {
+  position: absolute;
+  border: #312e2e;
+  background-color: #312e2e;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  top: 10px;
+  left: 10px;
+}
+.img_opacity {
+  opacity: 0.5;
+}
+.udsolgt_p {
+  color: grey;
+}
+
+/************ Product site *******************/
+.product_container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  padding-inline: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.logo-flex3 {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.img_productsite {
+  width: 80%;
+  border: 1px solid #312e2e;
+}
+.product_text {
+  font-size: 1.8rem;
+}
+.h2_product {
+  font-size: 2.2rem;
+  padding-bottom: 3rem;
+}
+.pris_product {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.product_farve {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+.type_kategori {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+.product-options {
+  padding-top: 10rem;
+  width: 100%;
+  max-width: 500px; /* Juster efter behov */
+}
+
+.size-selector {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.add-to-cart {
+  flex: 1;
+  background: black;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wishlist {
+  width: 50px;
+  background: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .logo-flex {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .logo {
+    width: 90%;
+  }
+  .category {
+    width: 200px;
+  }
+  .product_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .product_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-inline: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .logo-flex3 {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .img_productsite {
+    width: 80%;
+    border: 1px solid #312e2e;
+    margin-left: 2.5rem;
+  }
+  .product_text {
+    font-size: 1.4rem;
+    margin-left: 2.5rem;
+  }
+  .h2_product {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 2.5rem;
+  }
+  .pris_product {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    margin-left: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .product_farve {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    margin-left: 2.5rem;
+  }
+  .type_kategori {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    margin-left: 2.5rem;
+  }
+
+  .product-options {
+    padding-top: 5rem;
+    width: 100%;
+    max-width: 360px; /* Juster efter behov */
+    margin-left: 2.5rem;
+  }
+}
