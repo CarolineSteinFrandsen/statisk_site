@@ -3,8 +3,10 @@ let product_container = document.querySelector(".product_container");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
-  .then((data) => {
-    product_container.innerHTML = `
+  .then((data) => showProduct(data));
+
+function showProduct(data) {
+  product_container.innerHTML = `
    <div>
                 <img class="img_productsite" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="t-shirt">
             </div>
@@ -40,4 +42,4 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
                     </div>
                 </div>
             </div>`;
-  });
+}
