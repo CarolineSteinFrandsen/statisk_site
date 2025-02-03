@@ -1,6 +1,10 @@
+const mycategory = new URLSearchParams(window.location.search).get("category");
 const product_list_container = document.querySelector(".product_list_container");
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=100`)
+const overskrift = document.querySelector("h2");
+overskrift.innerHTML = mycategory;
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${mycategory}`)
   .then((response) => response.json())
   .then((data) => showList(data));
 
