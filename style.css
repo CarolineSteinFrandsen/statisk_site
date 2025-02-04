@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: lightgray;
 }
 
 .img_product {
@@ -137,6 +138,19 @@
 .udsolgt_p {
   color: grey;
 }
+.hide {
+  display: none;
+}
+.pris_product2 {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: red;
+}
+.pris_product_før2 {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
 
 /************ Product site *******************/
 .product_container {
@@ -153,6 +167,7 @@
   padding-bottom: 1rem;
 }
 .img_productsite {
+  display: block;
   width: 80%;
   border: 1px solid #312e2e;
 }
@@ -166,7 +181,8 @@
 .pris_product {
   font-size: 1.5rem;
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+  color: red;
 }
 .product_farve {
   font-size: 1.2rem;
@@ -217,6 +233,37 @@
   justify-content: center;
   cursor: pointer;
   font-size: 20px;
+}
+
+.udsalgs_boks2 {
+  position: absolute;
+  border: red;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  top: 27%;
+  left: 10%;
+}
+.soldout_boks2 {
+  position: absolute;
+  border: #312e2e;
+  background-color: #312e2e;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  top: 27%;
+  right: 53%;
+}
+.billede_productsite {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.pris_product_før {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -276,7 +323,7 @@
     font-size: 1.2rem;
     padding-top: 1rem;
     margin-left: 2.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   .product_farve {
     font-size: 0.9rem;
@@ -294,5 +341,30 @@
     width: 100%;
     max-width: 360px; /* Juster efter behov */
     margin-left: 2.5rem;
+  }
+  .udsalgs_boks2 {
+    position: absolute;
+    border: red;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    top: 29%;
+    left: 10%;
+  }
+  .pris_product_før {
+    font-size: 1rem;
+    padding-bottom: 3rem;
+    margin-left: 2.5rem;
+  }
+  .soldout_boks2 {
+    position: absolute;
+    border: #312e2e;
+    background-color: #312e2e;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    top: 29%;
+    right: 13%;
   }
 }
