@@ -20,8 +20,12 @@ function showList(products) {
                 <p class="nike">${product.brandname}</p>
                 <p> <b>${product.productdisplayname}</b></p>
                 <div>
-                    <p class="pris">Pris: ${product.price} kr.</p>
+                    <p class="pris_product2 ${!product.discount && "hide"}"> Nypris: ${Math.round(product.price * (1 - product.discount / 100))} kr.</p>
+                    <p class="pris_product_før2">Pris: ${product.price} kr.</p>
                 </div>
+                
+                 <div class="udsalgs_boks ${!product.discount && "hide"}">${product.discount}%</div>
+                 <div class="soldout_boks ${!product.soldout && "hide"}">Udsolgt</div>
             </div>
   `
     )
